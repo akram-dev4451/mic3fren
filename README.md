@@ -1,2 +1,1 @@
-# mic3fren
-the website on englush and french languages
+the club scientific website in english and french
