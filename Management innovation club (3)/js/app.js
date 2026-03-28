@@ -201,15 +201,14 @@ function EventsSection() {
                         React.createElement("h4", { style: { marginBottom: "1rem", color: "var(--text-dark)" } }, `${t.picturesFrom} ${event.title} ${event.year}`),
                         React.createElement(
                             "div",
-                            { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem", marginBottom: "2rem" } },
+                            { className: "event-photos-grid", style: { marginBottom: "2rem" } },
                             event.photos.map((photo, idx) =>
                                 React.createElement(
                                     "div",
-                                    { key: idx, style: { position: "relative", paddingBottom: "100%", overflow: "hidden", borderRadius: "0.5rem", backgroundColor: "#e2e8f0" } },
+                                    { key: idx },
                                     React.createElement("img", {
                                         src: photo,
                                         alt: `${event.title} ${idx + 1}`,
-                                        style: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" },
                                         onError: (e) => {
                                             e.target.style.display = "none";
                                         }

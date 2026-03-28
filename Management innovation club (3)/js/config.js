@@ -123,8 +123,6 @@ export const EVENTS = [
         photos: [
             "event pictures/stagera1.jpg",
             "event pictures/stagera 2.jpg",
-            "event pictures/stagera 3.jpg",
-            "event pictures/stagera 4.jpg",
             "event pictures/stagera 5.jpg",
             "event pictures/stagera 6.jpg"
         ]
